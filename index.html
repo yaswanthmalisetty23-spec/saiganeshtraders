@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Ganesh Traders</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f5f7fa;
+        }
+
+        header{
+            background:#0b3d91;
+            color:white;
+            padding:20px 8%;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .logo h1{
+            font-size:28px;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            gap:25px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        .hero{
+            height:85vh;
+            background:url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80');
+            background-size:cover;
+            background-position:center;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+            color:white;
+            position:relative;
+        }
+
+        .hero::before{
+            content:"";
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background:rgba(0,0,0,0.55);
+        }
+
+        .hero-content{
+            position:relative;
+            z-index:2;
+            max-width:800px;
+        }
+
+        .hero h2{
+            font-size:50px;
+            margin-bottom:15px;
+        }
+
+        .hero p{
+            font-size:22px;
+            margin-bottom:30px;
+        }
+
+        .btn{
+            display:inline-block;
+            padding:15px 30px;
+            background:#ff9800;
+            color:white;
+            text-decoration:none;
+            border-radius:5px;
+            font-weight:bold;
+        }
+
+        .section{
+            padding:70px 10%;
+        }
+
+        .section-title{
+            text-align:center;
+            font-size:36px;
+            margin-bottom:40px;
+            color:#0b3d91;
+        }
+
+        .about{
+            text-align:center;
+            line-height:1.8;
+        }
+
+        .services{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background:white;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 3px 10px rgba(0,0,0,0.1);
+            text-align:center;
+        }
+
+        .card h3{
+            color:#0b3d91;
+            margin-bottom:15px;
+        }
+
+        .contact{
+            text-align:center;
+            line-height:2;
+        }
+
+        footer{
+            background:#0b3d91;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h1>Sai Ganesh Traders</h1>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>Sai Ganesh Traders</h2>
+
+        <p>
+            Providing OFC Laying, Fiber Splicing,
+            OTDR Testing and Telecom Infrastructure
+            Services Across India
+        </p>
+
+        <a href="#" class="btn">Request a Quote</a>
+    </div>
+</section>
+
+<section class="section">
+    <h2 class="section-title">About Us</h2>
+
+    <div class="about">
+        <p>
+            Sai Ganesh Traders is a leading telecom infrastructure
+            company specializing in OFC laying, fiber optic cable
+            installation, fusion splicing, OTDR testing, route surveys,
+            network maintenance and fault restoration services.
+        </p>
+    </div>
+</section>
+
+<section class="section">
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>OFC Laying</h3>
+            <p>Underground and aerial optical fiber deployment.</p>
+        </div>
+
+        <div class="card">
+            <h3>Fiber Splicing</h3>
+            <p>Professional fusion splicing services.</p>
+        </div>
+
+        <div class="card">
+            <h3>OTDR Testing</h3>
+            <p>Fiber testing and certification solutions.</p>
+        </div>
+
+        <div class="card">
+            <h3>Route Survey</h3>
+            <p>Detailed telecom route planning and survey.</p>
+        </div>
+
+        <div class="card">
+            <h3>Fault Restoration</h3>
+            <p>Quick identification and restoration of fiber faults.</p>
+        </div>
+
+        <div class="card">
+            <h3>Maintenance</h3>
+            <p>Preventive and corrective network maintenance.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section">
+    <h2 class="section-title">Contact Us</h2>
+
+    <div class="contact">
+        <h3>Sai Ganesh Traders</h3>
+
+        <p>📞 +91 9642146777</p>
+
+        <p>📧 info@saiganeshtraders.in</p>
+
+        <p>📍 Andhra Pradesh, India</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Sai Ganesh Traders | All Rights Reserved
+</footer>
+
+</body>
+</html>
